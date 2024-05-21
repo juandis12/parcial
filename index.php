@@ -155,7 +155,7 @@
     </footer>
 
     <!-- Website scripts -->
-    <script src="jajjaj.js"></script>
+    <script src="/javascrit/jajjaj.js"></script>
 
     <!-- Ion icons scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
