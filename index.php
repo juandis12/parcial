@@ -13,7 +13,7 @@
 
     <!-- Animate CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <title>Juan Diego RUiz | Estudiante Ingenieria En Sistemas</title>
+    <title>Juan Diego Ruiz | Estudiante Ingenieria En Sistemas</title>
 </head>
 
 <body>
