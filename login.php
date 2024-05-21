@@ -1,3 +1,14 @@
+<?php
+    /*TODO : Llamado cadena de conexion */
+    require_once("config/conexion.php");
+    if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
+      require_once("modelos/usuarios.php");
+      /*TODO INICIALIZANDO CLASE */
+      $usuario = new usuarios();
+      $usuario->login();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,6 +87,26 @@
         <a href="register.html" class="text-center">Register a new membership</a>
       </p>
     </div>
+    <?php
+      if(isset($_GET["m"])){
+        switch($_GET["m"]){
+          case "1":
+            ?>
+            <div class="alert alert-danger" role="alert">
+                Los datos ingrsados son incorrectos!
+            </div>
+            <?php
+            break
+          case "2";
+            ?>
+              <div class="alert alert-warning" role="alert">
+                El formulario tiene los campos vacios!
+              </div>
+            <?php
+            break;
+        }     
+      } 
+    ?>
     <!-- /.login-card-body -->
   </div>
 </div>
