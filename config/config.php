@@ -8,7 +8,7 @@
         protected function Conexion(){
         try{
 
-                $conectar = $this->dbh = new PDO("mysql: local=localhost;dbname=proyecto","root","");
+                $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=proyecto","juan","umd");
 
                 return $conectar;} 
             catch (Exception $e) {

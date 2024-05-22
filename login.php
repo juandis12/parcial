@@ -1,10 +1,10 @@
 <?php
     /*TODO : Llamado cadena de conexion */
-    require_once("config/conexion.php");
+    require_once("config/config.php");
     if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
-      require_once("modelos/usuarios.php");
+      require_once("modelos/Usuario.php");
       /*TODO INICIALIZANDO CLASE */
-      $usuario = new usuarios();
+      $usuario = new Usuario();
       $usuario->login();
     }
 ?>
@@ -28,16 +28,36 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="#"><b>Admin</b>LTE</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="../../index3.html" method="post">
+      <form method="post">
+      <?php
+      if(isset($_GET["m"])){
+        switch($_GET["m"]){
+          case "1":
+            ?>
+            <div class="alert alert-danger" role="alert">
+                Los datos ingrsados son incorrectos!
+            </div>
+            <?php
+            break;
+          case "2":
+            ?>
+              <div class="alert alert-warning" role="alert">
+                El formulario tiene los campos vacios!
+              </div>
+            <?php
+            break;
+        }     
+      } 
+    ?>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" name="email" id="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -45,7 +65,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password"name="contrasena" id="contrasena" class="form-control" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -55,7 +75,7 @@
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" id="remember">
+              
               <label for="remember">
                 Remember Me
               </label>
@@ -63,10 +83,12 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <input type="text" name="enviar" class="from-control" value="si">
+            <button type="submit" class="btn btn-primary btn-block">Acceder</button>
           </div>
           <!-- /.col -->
         </div>
+        
       </form>
 
       <div class="social-auth-links text-center mb-3">
@@ -87,26 +109,7 @@
         <a href="register.html" class="text-center">Register a new membership</a>
       </p>
     </div>
-    <?php
-      if(isset($_GET["m"])){
-        switch($_GET["m"]){
-          case "1":
-            ?>
-            <div class="alert alert-danger" role="alert">
-                Los datos ingrsados son incorrectos!
-            </div>
-            <?php
-            break;
-          case '2':
-            ?>
-              <div class="alert alert-warning" role="alert">
-                El formulario tiene los campos vacios!
-              </div>
-            <?php
-            break;
-        }     
-      } 
-    ?>
+    
     <!-- /.login-card-body -->
   </div>
 </div>
