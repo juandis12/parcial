@@ -96,8 +96,8 @@
                 Los datos ingrsados son incorrectos!
             </div>
             <?php
-            break
-          case "2";
+            break;
+          case '2':
             ?>
               <div class="alert alert-warning" role="alert">
                 El formulario tiene los campos vacios!
