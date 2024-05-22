@@ -24,5 +24,5 @@ public function set_names(){
 public static function ruta(){
     return "http://localhost/practico/";
     }
- }
+}
 
