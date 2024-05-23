@@ -1,3 +1,12 @@
+<?php
+define( "BASE_URL", "/view/");
+require_once("../practico/config/config.php");
+if(isset($_SESSION["id"]))
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="hydrated">
 
@@ -165,3 +174,11 @@
 
 </body>
 </html>
+
+<?php
+    else{
+        header("Location:".Conectar::ruta()."/view/error.php");
+    }
+
+?>
+
