@@ -22,7 +22,7 @@
                         $_SESSION["id"]=$resultado["id"];
                         $_SESSION["nombre"]=$resultado["nombre"];
                         $_SESSION["email"]=$resultado["email"];
-                        header("Location:".Conectar::ruta()."views/inicio.php");
+                        header("Location:".Conectar::ruta()."view/inicio.php");
                         exit();
                     }else{
                         header("Location:".Conectar::ruta()."login.php?m=1");

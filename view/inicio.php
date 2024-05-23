@@ -16,7 +16,7 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  <?php include 'modulos/menu.php'; ?>
+  <?php include '../modulos/menu.php'; ?>
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
