@@ -1,10 +1,3 @@
-<?php
-define( "BASE_URL", "/view/");
-require_once("../practico/config/config.php");
-if(isset($_SESSION["id"]))
-?>
-
-
 
 
 <!DOCTYPE html>
@@ -148,9 +141,9 @@ if(isset($_SESSION["id"]))
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
         <a href="#" target="_blank"><img src="icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy" class="socicon"></a>
-        <a href="#" target="_blank"><img src="icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon"></a>
+        <a href="https://instagram.com" target="_blank"><img src="icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon"></a>
         <a href="#" target="_blank"><img src="icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon"></a>
-        <a href="#" target="_blank"><img src="icons/icons8-github.gif" alt="Github" class="socicon"></a>
+        <a href="https://github.com/juandis12/parcial" target="_blank"><img src="icons/icons8-github.gif" alt="Github" class="socicon"></a>
     </div>
 
     <!-- Scroll to top -->
@@ -174,11 +167,3 @@ if(isset($_SESSION["id"]))
 
 </body>
 </html>
-
-<?php
-    else{
-        header("Location:".Conectar::ruta()."/view/error.php");
-    }
-
-?>
-
