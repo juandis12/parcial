@@ -1,0 +1,33 @@
+.admin-de-redes-sociales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .crear .icono {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    margin-right: 10px;
+  }
+  
+  .crear .enlace {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .cargar .icono {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    margin-right: 10px;
+  }
+  
+  .cargar .enlace {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+  }
