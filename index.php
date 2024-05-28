@@ -1,4 +1,12 @@
+<?php
+require_once("/modelos/Usuario.php");
+$usuario = new Usuario();
+$usu = $usuario-> get_usuario();
 
+require_once("modelos/Social_Media.php");
+$social = new social_media();
+$soc = $social->get_social_Media();
+?>
 
 <!DOCTYPE html>
 <html lang="en" class="hydrated">
@@ -140,7 +148,9 @@
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-        <a href="#" target="_blank"><img src="icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy" class="socicon"></a>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href='<?php echo $soc[$i]["socmed_url"]; ?>'><i class='bx bxl-<?php echo $soc[$i]["socmed_icono"]; ?>'></i></a>
+
         <a href="https://instagram.com" target="_blank"><img src="icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon"></a>
         <a href="#" target="_blank"><img src="icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon"></a>
         <a href="https://github.com/juandis12/parcial" target="_blank"><img src="icons/icons8-github.gif" alt="Github" class="socicon"></a>

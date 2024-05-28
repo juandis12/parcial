@@ -31,6 +31,11 @@ function guardaryeditar(e) {
         }
     })
 }
+function nuevo(){
+    $('#titulo_modal').html('Nueva Red Social');
+    //$('#socialMedia_form')[0].reset();
+    $('#modalcrearRedes').modal('show');
+}
 
 function editar(socmed_id) {
     $.post("/Portafolio/controller/social_media.php?opc=mostrar", { socmed_id: socmed_id }, function (data) {
