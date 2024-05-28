@@ -84,7 +84,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
             </div>
             <!-- /.col -->
             <div class="col-4">
-              <input type="text" name="enviar" class="from-control" value="si">
+            <input type="text" name="enviar" class="from-control" value="si">
               <button type="submit" class="btn btn-primary btn-block">Acceder</button>
             </div>
             <!-- /.col -->

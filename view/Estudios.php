@@ -20,6 +20,7 @@ if (isset($_SESSION["id"])) {
         <link rel="stylesheet" href="../public/plugins/fontawesome-free/css/all.min.css">
         <!-- Theme style -->
         <link rel="stylesheet" href="../public/dist/css/adminlte.min.css">
+
     </head>
 
     <body class="hold-transition sidebar-mini">
@@ -32,7 +33,6 @@ if (isset($_SESSION["id"])) {
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
                 <!-- Brand Logo -->
                 <a href="../index.php" class="brand-link">
-
                     <span class="brand-text font-weight-light">PORTAFOLIO</span>
                 </a>
 
@@ -41,7 +41,6 @@ if (isset($_SESSION["id"])) {
                     <!-- Sidebar user (optional) -->
                     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div class="image">
-
                         </div>
                         <div class="info">
                             <a href="#" class="d-block"><?php echo $_SESSION["nombre"]; ?></a>
@@ -54,8 +53,7 @@ if (isset($_SESSION["id"])) {
                     <nav class="mt-2">
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                             <!-- Add icons to the links using the .nav-icon class
-                            with font-awesome or any other icon font library -->
-
+        with font-awesome or any other icon font library -->
                             <li class="nav-item">
                                 <a href="../view/logout.php" class="nav-link">
                                     <i class="nav-icon fas fa-table "></i>
@@ -65,7 +63,6 @@ if (isset($_SESSION["id"])) {
                                     </p>
                                 </a>
                             </li>
-
                             <li class="nav-item">
                                 <a href="../view/informacion_Personal.php" class="nav-link">
                                     <i class="nav-icon fas fa-ellipsis-h"></i>
@@ -138,10 +135,39 @@ if (isset($_SESSION["id"])) {
                 <!-- Main content -->
                 <section class="content">
 
-                    <div class="container-fluid">
-                        hola
-                    </div>
+                    <div class="card card-primary card-outline">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-edit"></i>
+                                Estudios
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+                                Cargar
+                            </button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-primary">
+                                Crear
+                            </button>
+                            <br>
+                            <br>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
 
+                                            <th>Titulo</th>
+                                            <th>Descripcion</th>
+                                            <th>Fecha</th>
+
+                                        </tr>
+                                    </thead>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </div>
                 </section>
                 <!-- /.content -->
             </div>
@@ -151,7 +177,7 @@ if (isset($_SESSION["id"])) {
                 <div class="float-right d-none d-sm-block">
                     <b>Version</b> 3.1.0
                 </div>
-                <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+                <strong>Copyright &copy; 2024 <a href="https://github.com/juandis12">Juan ruiz</a>.</strong> All rights reserved.
             </footer>
 
             <!-- Control Sidebar -->

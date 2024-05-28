@@ -135,19 +135,38 @@ if (isset($_SESSION["id"])) {
                 <!-- Main content -->
                 <section class="content">
 
-                    <div class="container-fluid">
-                        <div class="admin-de-redes-sociales">
-                            <div class="crear">
-                                <div class="icono"></div>
-                                <div class="enlace"></div>
-                            </div>
-                            <div class="cargar">
-                                <div class="icono"></div>
-                                <div class="enlace"></div>
+                    <div class="card card-primary card-outline">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-edit"></i>
+                                Social Media
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+                                Cargar
+                            </button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-primary">
+                                Crear
+                            </button>
+                            <br>
+                            <br>
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Iconos</th>
+                                            <th>Enlaces</th>
+
+                                        </tr>
+                                    </thead>
+                                    
+                                </table>
                             </div>
                         </div>
+                        <!-- /.card -->
                     </div>
-
                 </section>
                 <!-- /.content -->
             </div>
@@ -157,7 +176,7 @@ if (isset($_SESSION["id"])) {
                 <div class="float-right d-none d-sm-block">
                     <b>Version</b> 3.1.0
                 </div>
-                <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+                <strong>Copyright &copy; 2024 <a href="https://github.com/juandis12">Juan ruiz</a>.</strong> All rights reserved.
             </footer>
 
             <!-- Control Sidebar -->
