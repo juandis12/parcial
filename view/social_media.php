@@ -152,13 +152,14 @@ if (isset($_SESSION["id"])) {
                             <br>
                             <br>
                             <div class="card-body">
-                                <table class="table table-bordered">
+                                <table id="social_media_data" class="table display responsive wrap">
                                     <thead>
                                         <tr>
 
-                                            <th>Iconos</th>
-                                            <th>Enlaces</th>
-
+                                            <th class="wd-15p">Iconos</th>
+                                            <th class="wd-15p">Enlaces</th>
+                                            <th class="wd-10p"></th>
+                                            <th class="wd-10p"></th>
                                         </tr>
                                     </thead>
                                     
@@ -196,8 +197,12 @@ if (isset($_SESSION["id"])) {
         <!-- AdminLTE for demo purposes -->
         <script src="../public/dist/js/demo.js"></script>
     </body>
+        
+        <?php require_once("mntModalsocial_media.php");?>
 
-    </html>
+        <?php require_once("modulos/js.php"); ?>
+        <script type="text/javascript" src="js/social_media.js"></script>
+        </html>
 
 <?php
 } else {

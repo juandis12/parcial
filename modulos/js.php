@@ -11,3 +11,4 @@
 <script src="../public/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../public/dist/js/adminlte.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
