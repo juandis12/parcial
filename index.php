@@ -1,7 +1,7 @@
 <?php
 require_once("/modelos/Usuario.php");
 $usuario = new Usuario();
-$usu = $usuario-> get_usuario();
+$usu = $usuario-> get_Usuario();
 
 require_once("modelos/Social_Media.php");
 $social = new social_media();

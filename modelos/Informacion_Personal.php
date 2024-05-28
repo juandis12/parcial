@@ -8,7 +8,7 @@ class Informacion_Personal extends Conectar
         $sql = "SELECT * FROM Informacion_Personal WHERE est=1";
         $sql = $Informacion->prepare($sql);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $Informacion = $sql->fetchAll();
     }
     public function get_Informacion_PersonalXid($id)
     {
@@ -18,7 +18,7 @@ class Informacion_Personal extends Conectar
         $sql = $Informacion->prepare($sql);
         $sql->bindValue(1, $id);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $Informacion = $sql->fetchAll();
     }
 
     public function delete_Informacion_Personal($id)
@@ -29,7 +29,7 @@ class Informacion_Personal extends Conectar
         $sql = $Informacion->prepare($sql);
         $sql->bindValue(1, $id);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $Informacion = $sql->fetchAll();
     }
 
     public function insert_Informacion_Personal($nombre, $apellido, $direccion, $telefono, $email)
@@ -44,7 +44,7 @@ class Informacion_Personal extends Conectar
         $sql->bindValue(1, $telefono);
         $sql->bindValue(1, $email);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $Informacion = $sql->fetchAll();
     }
 
 
@@ -70,6 +70,6 @@ class Informacion_Personal extends Conectar
         $sql->bindValue(5, $email);
         $sql->bindValue(6, $id);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $Informacion = $sql->fetchAll();
     }
 }

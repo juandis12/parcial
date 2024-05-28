@@ -41,7 +41,7 @@ class Menu extends Conectar
         $sql->bindValue(1, $opcion);
         $sql->bindValue(1, $link);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $Menu = $sql->fetchAll();
     }
 
 
@@ -62,6 +62,6 @@ class Menu extends Conectar
         $sql->bindValue(2, $link);
         $sql->bindValue(3, $id);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $Menu = $sql->fetchAll();
     }
 }

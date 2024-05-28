@@ -1,6 +1,16 @@
 <?php
 class Usuario extends Conectar
 {
+    public function get_usuario()
+    {
+        $usuario = parent::Conexion();
+        parent::set_names();
+        $sql = "SELECT * FROM usuario WHERE est=1";
+        $sql = $usuario->prepare($sql);
+        $sql->execute();
+        return $usuario = $sql->fetchAll();
+    }
+
     public function login()
     {
         $conectar = parent::Conexion();

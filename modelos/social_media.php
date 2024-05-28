@@ -33,7 +33,7 @@ class social_media extends Conectar
         $sql = $social->prepare($sql);
         $sql->bindValue(1, $socmed_id);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $social = $sql->fetchAll();
     }
 
     public function insert_social_media($socmed_icon, $socmed_url)
@@ -45,7 +45,7 @@ class social_media extends Conectar
         $sql->bindValue(1, $socmed_icon);
         $sql->bindValue(1, $socmed_url);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $social = $sql->fetchAll();
     }
 
 
@@ -65,7 +65,7 @@ class social_media extends Conectar
         $sql->bindValue(2, $socmed_url);
         $sql->bindValue(3, $socmed_id);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $social = $sql->fetchAll();
     }
 }
 

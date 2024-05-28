@@ -8,7 +8,7 @@ class Trabajos_Realizados extends Conectar
         $sql = "SELECT * FROM Trabajos_Realizados WHERE est=1";
         $sql = $trabajos->prepare($sql);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $trabajos = $sql->fetchAll();
     }
     public function get_Trabajos_RealizadosXid($id)
     {

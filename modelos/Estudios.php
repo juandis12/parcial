@@ -42,7 +42,7 @@ class Estudios extends Conectar
         $sql->bindValue(1, $descripcion);
         $sql->bindValue(1, $fecha);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $Estudios = $sql->fetchAll();
     }
 
 
@@ -64,6 +64,6 @@ class Estudios extends Conectar
         $sql->bindValue(2, $fecha);
         $sql->bindValue(4, $id);
         $sql->execute();
-        return $resultado = $sql->fetchAll();
+        return $Estudios = $sql->fetchAll();
     }
 }
